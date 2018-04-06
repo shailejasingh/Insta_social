@@ -10,7 +10,7 @@ from django.shortcuts import get_object_or_404
 from django.views import generic
 from groups.models import Group,GroupMember
 from . import models
-
+#this is to create group
 class CreateGroup(LoginRequiredMixin, generic.CreateView):
     fields = ("name", "description")
     model = Group
